@@ -1,4 +1,4 @@
-import { Default } from '~/components/Layout'
+import { Default } from '~/layouts'
 
 function Following() {
     return (
