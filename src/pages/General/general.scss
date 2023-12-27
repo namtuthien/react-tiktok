@@ -1,20 +1,32 @@
 @import 'normalize.css';
 
 :root {
-    --primary: #fe2c55;
+    --primary: rgb(254, 44, 85);
+    --secondary: rgb(22, 24, 35);
+
+    // white
+    --white: #fff;
 
     // gray
     --gray-o1: rgba(22, 24, 35, 0.06);
     --gray-o2: rgba(22, 24, 35, 0.34);
     --gray-o3: rgba(22, 24, 35, 0.12);
+    --gray-o4: rgba(22, 24, 35, 0.03);
+    --gray-o5: rgba(22, 24, 35, 0.75);
+    --gray-o5: rgba(22, 24, 35, 0.5);
 
     // black
     --black: #000;
 
     // font-size
+    --fs-tiny: 1.2rem;
+    --fs-small: 1.4rem;
     --fs-default: 1.6rem;
     --fs-medium: 2rem;
     --fs-large: 2.4rem;
+    --fs-h1: 2.4rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.8rem;
 
     // font-weight
     --fw-normal: 400;

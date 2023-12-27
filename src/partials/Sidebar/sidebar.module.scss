@@ -1,0 +1,170 @@
+.sidebar-container {
+    width: 16%;
+    min-width: 200px;
+    max-width: 240px;
+    max-height: 100vh;
+    padding: 12px 0px 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &:hover {
+        &::-webkit-scrollbar {
+            display: flex;
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: var(--gray-o1);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--gray-o3);
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: var(--gray-o2);
+        }
+    }
+
+    .sidebar__active {
+        color: var(--primary);
+    }
+
+    hr {
+        margin: 12px 0;
+        width: 90%;
+        border: 0.8px solid var(--gray-o3);
+        opacity: 0.8;
+    }
+
+    .sidebar__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sidebar__nav-item {
+            width: 100%;
+            padding: 12px 0 12px 12px;
+            text-decoration: none;
+            color: var(--secondary);
+            font-size: var(--fs-medium);
+            font-weight: var(--fw-bold);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+
+            &:hover {
+                background-color: var(--gray-o4);
+                border-radius: 4px;
+            }
+
+            .sidebar__icon {
+                font-size: var(--fs-large);
+            }
+        }
+    }
+
+    .sidebar__following-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .following-group__title {
+            width: 100%;
+            padding: 0 12px;
+            color: var(--gray-o5);
+            font-size: var(--fs-h3);
+        }
+
+        .following-group__following-account {
+            text-decoration: none;
+            width: 100%;
+            padding: 12px 0 12px 12px;
+            color: var(--secondary);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+
+            &:hover {
+                background-color: var(--gray-o4);
+                border-radius: 4px;
+            }
+
+            .following-account__avatar {
+                width: 32px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .following-account__info {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+
+                .following-account__name {
+                    font-size: var(--fs-default);
+                    font-weight: var(--fw-bold);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .following-account__description {
+                    font-size: var(--fs-tiny);
+                    font-weight: var(--fw-normal);
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .following-group__more {
+            width: 100%;
+            padding: 12px 0 12px 12px;
+            text-align: left;
+            font-size: var(--fs-default);
+            font-weight: var(--fw-bold);
+            color: var(--primary);
+        }
+    }
+
+    .footer-container {
+        padding: 0px 0px 100px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        a {
+            text-decoration: none;
+            color: var(--gray-o5);
+            font-size: var(--fs-tiny);
+            font-weight: var(--fw-bold);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--gray-o5);
+        }
+
+        div {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 4px;
+        }
+    }
+}

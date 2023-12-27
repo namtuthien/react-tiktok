@@ -6,6 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 
     .header__left-container {
         width: 20%;
@@ -62,7 +64,7 @@
                 }
 
                 &:enabled:hover .header__search-icon {
-                    color: var(--black);
+                    color: var(--secondary);
                 }
 
                 &:enabled:hover {
@@ -92,7 +94,7 @@
                 .header__link {
                     height: 36px;
                     text-decoration: none;
-                    color: var(--black);
+                    color: var(--secondary);
                 }
             }
 

@@ -5,10 +5,10 @@ function Default({ children }) {
     return (
         <>
             <Header />
-            <div className='container'>
+            <main className='container'>
                 <Sidebar />
                 <div className="content">{children}</div>
-            </div>
+            </main>
         </>
     )
 }

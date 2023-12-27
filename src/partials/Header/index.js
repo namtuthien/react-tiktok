@@ -1,11 +1,11 @@
+// use link element from react-router-dom 
+import { Link } from 'react-router-dom'
+
 // use icon from react-icons 
 import { IconContext } from 'react-icons'
 import { FaSearch, FaPlus } from 'react-icons/fa'
 import { BiMessageDetail } from 'react-icons/bi'
 import { RiNotification4Line } from 'react-icons/ri'
-
-// use link element from react-router-dom 
-import { Link } from 'react-router-dom'
 
 // use bind from classnames
 import classNames from 'classnames/bind'
