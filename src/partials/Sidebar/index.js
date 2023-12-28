@@ -64,74 +64,74 @@ function Sidebar() {
                 <h3 className={cx('following-group__title')}>Theo dõi của bạn</h3>
                 {/* list */}
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
 
                 <NavLink className={cx('following-group__following-account', 'following-account')}>
-                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} />
+                    <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
-                        <p className={cx('following-account__name')}>Nam Thiên</p>
-                        <p className={cx('following-account__description')}>Description bla bla</p>
+                        <p className={cx('following-account__account-name')}>Nam Thiên</p>
+                        <p className={cx('following-account__name')}>Description bla bla</p>
                     </div>
                 </NavLink>
                 {/* end list */}

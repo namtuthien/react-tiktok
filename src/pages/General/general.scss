@@ -2,6 +2,7 @@
 
 :root {
     --primary: rgb(254, 44, 85);
+    --primary-o1: rgba(254, 44, 85, 0.08);
     --secondary: rgb(22, 24, 35);
 
     // white
@@ -13,10 +14,13 @@
     --gray-o3: rgba(22, 24, 35, 0.12);
     --gray-o4: rgba(22, 24, 35, 0.03);
     --gray-o5: rgba(22, 24, 35, 0.75);
-    --gray-o5: rgba(22, 24, 35, 0.5);
+    --gray-o6: rgba(22, 24, 35, 0.5);
 
     // black
     --black: #000;
+
+    // blue
+    --blue: rgb(43, 93, 185);
 
     // font-size
     --fs-tiny: 1.2rem;
@@ -27,11 +31,13 @@
     --fs-h1: 2.4rem;
     --fs-h2: 2rem;
     --fs-h3: 1.8rem;
+    --fs-h4: 1.6rem;
 
     // font-weight
     --fw-normal: 400;
     --fw-semi-bold: 500;
     --fw-bold: 600;
+    --fw-extra-bold: 700;
 }
 
 * {
@@ -49,6 +55,15 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: var(--secondary);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button:enabled {

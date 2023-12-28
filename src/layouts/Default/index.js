@@ -1,14 +1,27 @@
+// use bind from classnames
+import classNames from 'classnames/bind'
+
+// use css
+import styles from './default.module.scss'
+
+// use partials
 import Header from '~/partials/Header'
 import Sidebar from '~/partials/Sidebar'
+import Aside from '~/partials/Aside'
+
+const cx = classNames.bind(styles)
 
 function Default({ children }) {
     return (
         <>
             <Header />
-            <main className='container'>
+            <div className={cx('layout-container')}>
                 <Sidebar />
-                <div className="content">{children}</div>
-            </main>
+                <div className={cx('content-container')}>
+                    {children}
+                    <Aside />
+                </div>
+            </div>
         </>
     )
 }
