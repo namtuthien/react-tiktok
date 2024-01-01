@@ -1,9 +1,12 @@
 import { Default } from '~/layouts'
+import { Card } from '~/components'
 
 function Following() {
     return (
         <Default>
-            <h2>Following page</h2>
+            <Card isFollow={true} />
+            <Card isFollow={true} />
+            <Card isFollow={true} />
         </Default>
     )
 }

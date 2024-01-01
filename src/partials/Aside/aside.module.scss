@@ -1,6 +1,6 @@
 .aside-container {
     width: 28%;
-    max-height: 100vh;
+    max-height: calc(100vh - 60px);
     padding: 24px 0px;
     display: flex;
     flex-direction: column;

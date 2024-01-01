@@ -18,7 +18,9 @@ function Default({ children }) {
             <div className={cx('layout-container')}>
                 <Sidebar />
                 <div className={cx('content-container')}>
-                    {children}
+                    <main className={cx('main-container')}>
+                        {children}
+                    </main>
                     <Aside />
                 </div>
             </div>

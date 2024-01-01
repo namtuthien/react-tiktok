@@ -18,39 +18,38 @@ import styles from './sidebar.module.scss'
 const cx = classNames.bind(styles)
 
 function Sidebar() {
-    const isActive = true
     return (
         <nav className={cx('sidebar-container', 'sidebar')}>
             <div className={cx('sidebar__nav')}>
-                <NavLink className={cx('sidebar__nav-item', isActive ? 'sidebar__active' : '')}>
+                <NavLink to='/' className={({ isActive }) => cx('sidebar__nav-item', { 'sidebar__active': isActive })}>
                     <IconContext.Provider value={{ className: cx('sidebar__icon') }}>
                         <AiFillHome />
                     </IconContext.Provider>
                     <p>Dành cho bạn</p>
                 </NavLink>
 
-                <NavLink className={cx('sidebar__nav-item')}>
+                <NavLink to='/following' className={({ isActive }) => cx('sidebar__nav-item', { 'sidebar__active': isActive })}>
                     <IconContext.Provider value={{ className: cx('sidebar__icon') }}>
                         <FaUserFriends />
                     </IconContext.Provider>
                     <p>Đang theo dõi</p>
                 </NavLink>
 
-                <NavLink className={cx('sidebar__nav-item')}>
+                <NavLink to='/explore' className={({ isActive }) => cx('sidebar__nav-item', { 'sidebar__active': isActive })}>
                     <IconContext.Provider value={{ className: cx('sidebar__icon') }}>
                         <MdOutlineExplore />
                     </IconContext.Provider>
                     <p>Khám phá</p>
                 </NavLink>
 
-                <NavLink className={cx('sidebar__nav-item')}>
+                <NavLink to='/live' className={({ isActive }) => cx('sidebar__nav-item', { 'sidebar__active': isActive })}>
                     <IconContext.Provider value={{ className: cx('sidebar__icon') }}>
                         <RiLiveLine />
                     </IconContext.Provider>
                     <p>Trực tuyến</p>
                 </NavLink>
 
-                <NavLink className={cx('sidebar__nav-item')}>
+                <NavLink to='/profile' className={({ isActive }) => cx('sidebar__nav-item', { 'sidebar__active': isActive })}>
                     <IconContext.Provider value={{ className: cx('sidebar__icon') }}>
                         <CgProfile />
                     </IconContext.Provider>
@@ -63,7 +62,7 @@ function Sidebar() {
             <div className={cx('sidebar__following-group', 'following-group')}>
                 <h3 className={cx('following-group__title')}>Theo dõi của bạn</h3>
                 {/* list */}
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -71,7 +70,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -79,7 +78,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -87,7 +86,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -95,7 +94,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -103,7 +102,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -111,7 +110,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -119,7 +118,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>
@@ -127,7 +126,7 @@ function Sidebar() {
                     </div>
                 </NavLink>
 
-                <NavLink className={cx('following-group__following-account', 'following-account')}>
+                <NavLink to='/profile' className={cx('following-group__following-account', 'following-account')}>
                     <img className={cx('following-account__avatar')} src={require('~/assets/imgs/user-avatar/namthien.jpg')} alt='User avatar' />
                     <div className={cx('following-account__info')}>
                         <p className={cx('following-account__account-name')}>Nam Thiên</p>

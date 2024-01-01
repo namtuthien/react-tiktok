@@ -20,7 +20,7 @@ function Aside() {
                 <h1 className={cx('aside__title')}>Xu hướng cho bạn</h1>
                 {/* list */}
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARKTRACERS IN THE DARKTRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -33,7 +33,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -46,7 +46,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -59,7 +59,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -72,7 +72,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -85,7 +85,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -98,7 +98,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -111,7 +111,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('trends__item', 'item')}>
-                    <Link to='' className={cx('item__content')}>
+                    <Link to='/search' className={cx('item__content')}>
                         <p className={cx('item__title')}>TRACERS IN THE DARK</p>
                         <p className={cx('item__sub-title')}>123k videos</p>
                     </Link>
@@ -129,7 +129,7 @@ function Aside() {
                 <h1 className={cx('aside__title')}>Gợi ý theo dõi</h1>
                 {/* list */}
                 <div className={cx('follow-recommend__item')}>
-                    <Link to='' className={cx('follow-recommend__item-link')}>
+                    <Link to='/profile' className={cx('follow-recommend__item-link')}>
                         <div className={cx('follow-recommend__left-container')}>
                             <img src={cx(require('~/assets/imgs/user-avatar/namthien.jpg'))} alt='Nam Thiên' />
                         </div>
@@ -146,7 +146,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('follow-recommend__item')}>
-                    <Link to='' className={cx('follow-recommend__item-link')}>
+                    <Link to='/profile' className={cx('follow-recommend__item-link')}>
                         <div className={cx('follow-recommend__left-container')}>
                             <img src={cx(require('~/assets/imgs/user-avatar/namthien.jpg'))} alt='Nam Thiên' />
                         </div>
@@ -163,7 +163,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('follow-recommend__item')}>
-                    <Link to='' className={cx('follow-recommend__item-link')}>
+                    <Link to='/profile' className={cx('follow-recommend__item-link')}>
                         <div className={cx('follow-recommend__left-container')}>
                             <img src={cx(require('~/assets/imgs/user-avatar/namthien.jpg'))} alt='Nam Thiên' />
                         </div>
@@ -180,7 +180,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('follow-recommend__item')}>
-                    <Link to='' className={cx('follow-recommend__item-link')}>
+                    <Link to='/profile' className={cx('follow-recommend__item-link')}>
                         <div className={cx('follow-recommend__left-container')}>
                             <img src={cx(require('~/assets/imgs/user-avatar/namthien.jpg'))} alt='Nam Thiên' />
                         </div>
@@ -197,7 +197,7 @@ function Aside() {
                 </div>
 
                 <div className={cx('follow-recommend__item')}>
-                    <Link to='' className={cx('follow-recommend__item-link')}>
+                    <Link to='/profile' className={cx('follow-recommend__item-link')}>
                         <div className={cx('follow-recommend__left-container')}>
                             <img src={cx(require('~/assets/imgs/user-avatar/namthien.jpg'))} alt='Nam Thiên' />
                         </div>

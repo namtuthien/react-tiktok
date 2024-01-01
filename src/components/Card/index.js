@@ -17,7 +17,7 @@ import styles from './video.module.scss'
 
 const cx = classNames.bind(styles)
 
-function Video() {
+function Video({ isFollow }) {
     return (
         <div className={cx('card')}>
             <Link to='' className={cx('card__avatar')}>
@@ -48,9 +48,15 @@ function Video() {
                         </Link>
                     </div>
 
-                    <div className={cx('info__right-container')}>
-                        <button type='button'>Theo dõi</button>
-                    </div>
+                    {
+                        !isFollow && (
+                            <div className={cx('info__right-container')}>
+                                <button type='button'>Theo dõi</button>
+                            </div>
+                        )
+
+                    }
+
                 </div>
 
                 <div className={cx('card__video-div', 'video-div')}>
