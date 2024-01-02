@@ -1,12 +1,13 @@
+// use layout, component
 import { Default } from '~/layouts'
-import { Card } from '~/components'
+import { CardFull } from '~/components'
 
 function Following() {
     return (
         <Default>
-            <Card isFollow={true} />
-            <Card isFollow={true} />
-            <Card isFollow={true} />
+            <CardFull isFollow={true} />
+            <CardFull isFollow={true} />
+            <CardFull isFollow={true} />
         </Default>
     )
 }

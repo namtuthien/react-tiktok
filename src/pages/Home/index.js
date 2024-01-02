@@ -1,14 +1,14 @@
 // use components, layouts
 import { Default } from '~/layouts'
-import { Card } from '~/components'
+import { CardFull } from '~/components'
 
 function Home() {
     return (
         <Default>
             {/* list */}
-            <Card />
-            <Card />
-            <Card />
+            <CardFull />
+            <CardFull />
+            <CardFull />
             {/* end list */}
         </Default>
     )

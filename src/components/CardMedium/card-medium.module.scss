@@ -1,0 +1,81 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .card__video {
+        width: 100%;
+        text-decoration: none;
+        color: var(--secondary);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        video {
+            border-radius: 8px;
+            border: 1px solid var(--gray-o3);
+        }
+
+        p {
+            width: 100%;
+            font-size: var(--fs-default);
+            font-weight: var(--fw-bold);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .card__bottom-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            width: 50%;
+        }
+
+        .card__user {
+            justify-content: flex-start;
+
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid var(--gray-o3);
+                object-fit: cover;
+            }
+
+            p {
+                font-size: var(--fs-default);
+                font-weight: var(--fw-bold);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        .card__love-btn {
+            justify-content: flex-end;
+
+            .card__icon {
+                font-size: var(--fs-medium);
+                color: var(--gray-o8);
+            }
+
+            p {
+                font-size: var(--fs-default);
+                font-weight: var(--fw-semi-bold);
+                color: var(--gray-o8);
+            }
+        }
+    }
+}

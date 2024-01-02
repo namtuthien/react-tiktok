@@ -1,7 +1,7 @@
 // use link element from react-router-dom
 import { Link } from 'react-router-dom'
 
-// use icon fromreact-icons
+// use icon from react-icons
 import { IconContext } from 'react-icons'
 import { IoMusicalNote } from 'react-icons/io5'
 import { IoHeart } from 'react-icons/io5'
@@ -13,11 +13,11 @@ import { PiShareFatFill } from 'react-icons/pi'
 import classNames from 'classnames/bind'
 
 // use css
-import styles from './video.module.scss'
+import styles from './card-full.module.scss'
 
 const cx = classNames.bind(styles)
 
-function Video({ isFollow }) {
+function CardFull({ isFollow }) {
     return (
         <div className={cx('card')}>
             <Link to='' className={cx('card__avatar')}>
@@ -110,4 +110,4 @@ function Video({ isFollow }) {
     )
 }
 
-export default Video
+export default CardFull

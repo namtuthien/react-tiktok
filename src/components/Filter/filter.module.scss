@@ -1,0 +1,101 @@
+.filter-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .filter__chevron {
+        width: 80px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+
+        .filter__chevron-btn {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--white);
+            box-shadow: var(--gray-o3) 0px 2px 12px;
+            color: rgba(22, 24, 35, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .filter__icon {
+            font-size: var(--fs-default);
+        }
+
+        .filter__shadow {
+            width: 80px;
+            height: 100%;
+            background: linear-gradient(270.11deg, rgb(255, 255, 255) 0.09%, rgba(255, 255, 255, 0) 100.83%);
+            position: absolute;
+            z-index: 0;
+        }
+    }
+
+    .filter__chevron-left {
+        visibility: hidden;
+        left: 0px;
+
+        .filter__chevron-btn {
+            left: 4px;
+        }
+
+        .filter__shadow {
+            top: 0px;
+            left: 0px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    .filter__chevron-right {
+        right: 0px;
+
+        .filter__chevron-btn {
+            right: 4px;
+        }
+
+        .filter__shadow {
+            top: 0px;
+            right: 0px;
+            transform: unset;
+        }
+    }
+
+    .filter__btn-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .filter__btn {
+            flex: 0 0 max-content;
+            padding: 8px 12px;
+            border-radius: 4px;
+            background-color: var(--gray-o1);
+            font-size: var(--fs-default);
+            font-weight: var(--fw-bold);
+
+            &:hover {
+                background-color: var(--gray-o7);
+            }
+
+            &:focus {
+                background-color: var(--black1);
+                color: var(--white);
+            }
+        }
+    }
+}
